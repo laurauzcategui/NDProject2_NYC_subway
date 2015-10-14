@@ -1,6 +1,7 @@
 # Analysis of NYC Subway Dataset
 
 @author Laura Uzcategui
+
 @Version Analysis NYC Subway Dataset version 1.0
 
 # Background Information
