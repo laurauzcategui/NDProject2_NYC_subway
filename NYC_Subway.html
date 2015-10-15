@@ -198,11 +198,12 @@ Date : 30 Sept 2015
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># making available graphs inline</span>
 <span class="o">%</span><span class="k">pylab</span> inline
+<span class="o">%</span><span class="k">matplotlib</span> inline  
 <span class="c"># importing pandas for manipulation of data</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="c"># importing matplotlib for printing the plot</span>
@@ -257,15 +258,7 @@ Date : 30 Sept 2015
 </div>
 </div>
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>WARNING: pylab import has clobbered these variables: [&apos;xlim&apos;, &apos;ylim&apos;]
-&#96;%matplotlib&#96; prevents importing * from pylab and numpy
-</pre>
-</div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[40]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -437,7 +430,7 @@ Probability that Riderships with Rain is larger</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">mann_whitney_plus_means</span><span class="p">(</span><span class="n">turnstile_weather</span><span class="p">):</span>
@@ -459,7 +452,7 @@ Probability that Riderships with Rain is larger</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">mann_whitney_plus_means</span><span class="p">(</span><span class="n">weather_data</span><span class="p">)</span>
@@ -532,7 +525,7 @@ day_week - Integer (0 ­ 6 Mon ­ Sun) corresponding to the day of the week.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">linear_regression</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
@@ -586,7 +579,7 @@ day_week - Integer (0 ­ 6 Mon ­ Sun) corresponding to the day of the week.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">pred</span> <span class="o">=</span>  <span class="n">predictions</span><span class="p">(</span><span class="n">weather_data</span><span class="p">)</span>
@@ -607,8 +600,8 @@ day_week - Integer (0 ­ 6 Mon ­ Sun) corresponding to the day of the week.
 Dep. Variable:        ENTRIESn_hourly   R-squared:                       0.489
 Model:                            OLS   Adj. R-squared:                  0.486
 Method:                 Least Squares   F-statistic:                     161.1
-Date:                Wed, 14 Oct 2015   Prob (F-statistic):               0.00
-Time:                        23:12:51   Log-Likelihood:            -3.8697e+05
+Date:                Thu, 15 Oct 2015   Prob (F-statistic):               0.00
+Time:                        13:25:47   Log-Likelihood:            -3.8697e+05
 No. Observations:               42649   AIC:                         7.744e+05
 Df Residuals:                   42396   BIC:                         7.766e+05
 Df Model:                         252                                         
@@ -891,7 +884,7 @@ strong multicollinearity problems or that the design matrix is singular.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">compute_r_squared</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">predictions</span><span class="p">):</span>
@@ -916,7 +909,7 @@ strong multicollinearity problems or that the design matrix is singular.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">dataPoints</span> <span class="o">=</span> <span class="n">weather_data</span><span class="p">[</span><span class="s">&#39;ENTRIESn_hourly&#39;</span><span class="p">]</span>
@@ -957,7 +950,7 @@ strong multicollinearity problems or that the design matrix is singular.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">plot_residuals</span><span class="p">(</span><span class="n">turnstile_weather</span><span class="p">,</span> <span class="n">predictions</span><span class="p">):</span>
@@ -973,7 +966,7 @@ strong multicollinearity problems or that the design matrix is singular.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">plot_residuals</span><span class="p">(</span><span class="n">weather_data</span><span class="p">,</span><span class="n">pred</span><span class="p">)</span>
@@ -1154,7 +1147,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">normalize_features</span><span class="p">(</span><span class="n">features</span><span class="p">):</span>
@@ -1228,7 +1221,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">#get predictions from gradient descent </span>
@@ -1249,7 +1242,7 @@ SUVORK5CYII=
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>R-squared =  0.483483010174
+<pre>R-squared =  0.487224491635
 </pre>
 </div>
 </div>
@@ -1269,7 +1262,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">entries_histogram_rain</span><span class="p">(</span><span class="n">turnstile_weather</span><span class="p">):</span>
@@ -1297,7 +1290,7 @@ SUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">entries_histogram_rain</span><span class="p">(</span><span class="n">weather_rain</span><span class="p">)</span>
@@ -1516,7 +1509,7 @@ bAAAAABJRU5ErkJggg==
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;ggplot: (8757024142917)&gt;
+<pre>&lt;ggplot: (8745770609205)&gt;
 </pre>
 </div>
 </div>
@@ -1527,7 +1520,7 @@ bAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">entries_histogram_Norain</span><span class="p">(</span><span class="n">turnstile_weather</span><span class="p">):</span>
@@ -1555,7 +1548,7 @@ bAAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">entries_histogram_Norain</span><span class="p">(</span><span class="n">weather_Norain</span><span class="p">)</span>
@@ -1837,7 +1830,7 @@ DwAAAGtQTgEAAGANyikAAACsQTkFAACANSinAAAAsMb/A13ti1+mi05MAAAAAElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;ggplot: (8757013762617)&gt;
+<pre>&lt;ggplot: (8745770583189)&gt;
 </pre>
 </div>
 </div>
@@ -1848,7 +1841,7 @@ DwAAAGtQTgEAAGANyikAAACsQTkFAACANSinAAAAsMb/A13ti1+mi05MAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">plot_weather_data</span><span class="p">(</span><span class="n">turnstile_weather</span><span class="p">):</span>
@@ -1870,13 +1863,13 @@ DwAAAGtQTgEAAGANyikAAACsQTkFAACANSinAAAAsMb/A13ti1+mi05MAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Visualisation-of-Ridership-by-Hour-and-Day-of-Week.">Visualisation of Ridership by Hour and Day of Week.<a class="anchor-link" href="#Visualisation-of-Ridership-by-Hour-and-Day-of-Week.">&#182;</a></h3>
+<h3 id="Visualisation-of-Ridership-by-Hour-and-Day-of-Week.">Visualisation of Ridership by Hour and Day of Week.<a class="anchor-link" href="#Visualisation-of-Ridership-by-Hour-and-Day-of-Week.">&#182;</a></h3><h4 id="Notice-that-Day_Week-is-from-0-6-matching-with-Sun-Sat">Notice that Day_Week is from 0-6 matching with Sun-Sat<a class="anchor-link" href="#Notice-that-Day_Week-is-from-0-6-matching-with-Sun-Sat">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="n">plot_weather_data</span><span class="p">(</span><span class="n">weather_data</span><span class="p">)</span>
@@ -2767,7 +2760,7 @@ GzNoMOT6JqqMAAAAAElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;ggplot: (8757013762621)&gt;
+<pre>&lt;ggplot: (8745769866577)&gt;
 </pre>
 </div>
 </div>
@@ -2782,7 +2775,7 @@ GzNoMOT6JqqMAAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Section-4.-Conclusion">Section 4. Conclusion<a class="anchor-link" href="#Section-4.-Conclusion">&#182;</a></h2><h4 id="4.1-From-your-analysis-and-interpretation-of-the-data,-do-more-people-ride-the-NYC-subway-when-it-is-raining-or-when-it-is-not-raining?">4.1 From your analysis and interpretation of the data, do more people ride the NYC subway when it is raining or when it is not raining?<a class="anchor-link" href="#4.1-From-your-analysis-and-interpretation-of-the-data,-do-more-people-ride-the-NYC-subway-when-it-is-raining-or-when-it-is-not-raining?">&#182;</a></h4><p>Based on the analysis and interpretation of the data, more people ride the NYC when is not raining.</p>
-<h4 id="4.2-What-analyses-lead-you-to-this-conclusion?-You-should-use-results-from-both-your-statistical-tests-and-your-linear-regression-to-support-your-analysis.">4.2 What analyses lead you to this conclusion? You should use results from both your statistical tests and your linear regression to support your analysis.<a class="anchor-link" href="#4.2-What-analyses-lead-you-to-this-conclusion?-You-should-use-results-from-both-your-statistical-tests-and-your-linear-regression-to-support-your-analysis.">&#182;</a></h4><p>Once the statistical test has been done, the rejection of the null hypothesis led us to confirm that the probability of Rain vs NoRain could be higher than 50% but might be presence of outliars so that We proceeded to execute linnear regresion by choosing features such as the ones related with the weather (fog,wind,rain and pressure) also the means for every of this features.</p>
+<h4 id="4.2-What-analysis-lead-you-to-this-conclusion?-You-should-use-results-from-both-your-statistical-tests-and-your-linear-regression-to-support-your-analysis.">4.2 What analysis lead you to this conclusion? You should use results from both your statistical tests and your linear regression to support your analysis.<a class="anchor-link" href="#4.2-What-analysis-lead-you-to-this-conclusion?-You-should-use-results-from-both-your-statistical-tests-and-your-linear-regression-to-support-your-analysis.">&#182;</a></h4><p>Once the statistical test has been done, the rejection of the null hypothesis led us to confirm that the probability of Rain vs NoRain could be higher than 50% but might be presence of outliars so that We proceeded to execute linnear regresion by choosing features such as the ones related with the weather (fog,wind,rain and pressure) also the means for every of this features.</p>
 <p>After the execution of linear regression for least squares and gradient descent and with the $R^2$ of 0.48 obtained plus the chart for the residuals we can determined that the model for the prediction is a good fit since the mean is around cero.</p>
 
 </div>
@@ -2797,7 +2790,7 @@ GzNoMOT6JqqMAAAAAElFTkSuQmCC
 <pre><code>Dataset: the dataset could be improved by wrangling the data for values such as day_week and filling or excluding empty values for rows were weigths were bigger. 
 Analysis: this project has been analysed carefully, nevertheless it could be improved by checking and adjusting multiple combinations of features.
 </code></pre>
-<h4 id="5.2-(Optional)-Do-you-have-any-other-insight-about-the-dataset-that-you-would-like-to-share-with-us?">5.2 (Optional) Do you have any other insight about the dataset that you would like to share with us?<a class="anchor-link" href="#5.2-(Optional)-Do-you-have-any-other-insight-about-the-dataset-that-you-would-like-to-share-with-us?">&#182;</a></h4><p>The dataset shared was understandble,  but I believe it could be better if from the beginning students will manipulated the improved dataset.</p>
+<h4 id="5.2-(Optional)-Do-you-have-any-other-insight-about-the-dataset-that-you-would-like-to-share-with-us?">5.2 (Optional) Do you have any other insight about the dataset that you would like to share with us?<a class="anchor-link" href="#5.2-(Optional)-Do-you-have-any-other-insight-about-the-dataset-that-you-would-like-to-share-with-us?">&#182;</a></h4><p>The dataset shared was understandable,  but I believe it could be better if from the beginning students will manipulated the improved dataset.</p>
 
 </div>
 </div>
